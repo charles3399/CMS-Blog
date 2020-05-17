@@ -2,10 +2,10 @@
 
 @section('content')
 
-    <div class="card card-default">
+    <div class="card shadow card-default">
 
         <div class="card-header">
-            {{ isset($tag) ? 'Edit Tag' : 'Create Tag' }}
+            <h4>{{ isset($tag) ? 'Edit Tag' : 'Create Tag' }}</h4>
         </div>
 
         <div class="card-body">

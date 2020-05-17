@@ -2,11 +2,10 @@
 
 <?php $__env->startSection('content'); ?>
 
-    <div class="card card-default">
+    <div class="card shadow card-default">
 
         <div class="card-header">
-            <?php echo e(isset($category) ? 'Edit Category' : 'Create Category'); ?>
-
+            <h4><?php echo e(isset($category) ? 'Edit Category' : 'Create Category'); ?></h4>
         </div>
 
         <div class="card-body">

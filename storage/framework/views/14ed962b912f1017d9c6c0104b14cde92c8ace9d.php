@@ -103,7 +103,7 @@
                 <div class="row">
                     <div class="col-md-4">
 
-                        <ul class="list-group">
+                        <ul class="shadow list-group">
                             <?php if(auth()->user()->isAdmin()): ?>
                                 <li class="list-group-item">
                                     <a href="<?php echo e(route('users.index')); ?>">Users</a>
@@ -111,25 +111,25 @@
                             <?php endif; ?>
                         </ul> 
 
-                        <ul class="list-group">
+                        <ul class="shadow list-group">
                             <li class="list-group-item">
                                 <a href="<?php echo e(route('posts.index')); ?>">Posts</a>
                             </li>
                         </ul>
 
-                        <ul class="list-group">
+                        <ul class="shadow list-group">
                             <li class="list-group-item">
                             <a href="<?php echo e(route('categories.index')); ?>">Categories</a>
                             </li>
                         </ul>
 
-                        <ul class="list-group">
+                        <ul class="shadow list-group">
                             <li class="list-group-item">
                             <a href="<?php echo e(route('tags.index')); ?>">Tags</a>
                             </li>
                         </ul>
 
-                        <ul class="list-group mt-5">
+                        <ul class="shadow list-group mt-5">
                             <li class="list-group-item">
                                 <a href="<?php echo e(route('trashed-posts.index')); ?>">Trashed posts</a>
                             </li>

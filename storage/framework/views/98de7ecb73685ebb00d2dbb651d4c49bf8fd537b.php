@@ -2,7 +2,7 @@
 
 <?php $__env->startSection('content'); ?>
 
-    <div class="card card-default">
+    <div class="card shadow card-default">
         <div class="card-header">
             <h3 class="float-left">Categories</h3>
             <a href="<?php echo e(route('categories.create')); ?>" class="btn btn-success float-right">New Category</a>

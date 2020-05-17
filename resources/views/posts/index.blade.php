@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="card card-default">
+    <div class="card shadow card-default">
         <div class="card-header">
 
             <h3 class="float-left">Posts</h3>
