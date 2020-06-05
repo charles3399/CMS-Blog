@@ -23,25 +23,25 @@
     
                 <div class="form-group">
                   <label for="title">Title</label>
-                  <input type="text" name="title" id="title" class="form-control" value="<?php echo e(isset($post)? $post->title : ''); ?>">
+                  <input type="text" name="title" id="title" class="form-control" value="<?php echo e(isset($post)? $post->title : ''); ?> <?php echo e(old('title')); ?>">
                 </div>
     
                   <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea name="description" id="description" cols="5" rows="5" class="form-control"><?php echo e(isset($post)? $post->description : ''); ?>
+                    <textarea name="description" id="description" cols="5" rows="5" class="form-control"><?php echo e(isset($post)? $post->description : ''); ?> <?php echo e(old('description')); ?>
 
                     </textarea>
                   </div>
     
                   <div class="form-group">
                     <label for="content">Content</label>
-                    <input id="content" type="hidden" name="content" value="<?php echo e(isset($post)? $post->content : ''); ?>">
+                    <input id="content" type="hidden" name="content" value="<?php echo e(isset($post)? $post->content : ''); ?> <?php echo e(old('content')); ?>">
                     <trix-editor input="content"></trix-editor>
                   </div>
     
                   <div class="form-group">
                     <label for="published_at">Published At</label>
-                    <input type="text" name="published_at" id="published_at" class="form-control" value="<?php echo e(isset($post)? $post->published_at : ''); ?>">
+                    <input type="text" name="published_at" id="published_at" class="form-control" value="<?php echo e(isset($post)? $post->published_at : ''); ?> <?php echo e(old('published_at')); ?>">
                   </div>
 
                   <?php if(isset($post)): ?>
@@ -81,7 +81,7 @@
                     <label for="tags">Tags</label>
                     <select class="tagSelect form-control" name="tags[]" id="tags" multiple="multiple">
                       <?php $__currentLoopData = $tags; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tag): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                        <option value="<?php echo e($tag->id); ?>"
+                        <option value="<?php echo e($tag->id); ?> <?php echo e(old('tags[]')); ?>"
                           
                           <?php if(isset($post)): ?>
                             <?php if($post->hasTag($tag->id)): ?>

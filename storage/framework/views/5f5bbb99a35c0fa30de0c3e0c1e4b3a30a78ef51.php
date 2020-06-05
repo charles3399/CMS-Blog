@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     <label for="">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" value="<?php echo e(isset($category) ? $category->name : ''); ?>">
+                    <input type="text" id="name" name="name" class="form-control" value="<?php echo e(isset($category) ? $category->name : ''); ?> <?php echo e(old('name')); ?>">
                 </div>
 
                 <div class="form-group">

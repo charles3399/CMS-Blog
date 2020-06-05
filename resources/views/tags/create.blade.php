@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     <label for="">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" value="{{ isset($tag) ? $tag->name : '' }}">
+                    <input type="text" id="name" name="name" class="form-control" value="{{ isset($tag) ? $tag->name : '' }} {{ old('name') }}">
                 </div>
 
                 <div class="form-group">
