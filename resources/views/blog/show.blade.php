@@ -44,7 +44,7 @@
         <h4 class="display-4 mb-4">{{ $post->description }}</h4>
 
         <!--Use this syntax for content field or when displaying a data from a trix plugin-->
-        {!! $post->content !!}
+        <span style="font-size: 20px">{!! $post->content !!}</span>
         
         <!--AddThis plugin code-->
         <div class="addthis_inline_share_toolbox mt-5"></div>

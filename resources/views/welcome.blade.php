@@ -64,7 +64,7 @@
                       </div>
                   </div>
               @empty
-                <p class="text-center">No results found <strong>{{ request()->query('search') }}</strong></p>
+                <p class="text-center">No results found for<strong>{{ request()->query('search') }}</strong></p>
               @endforelse
               
 
