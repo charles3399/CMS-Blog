@@ -43,6 +43,10 @@ Route::middleware(['auth'])->group(function()
     Route::get('users/profile', 'UsersController@edit')->name('users.edit-profile');
     
     Route::patch('users/profile', 'UsersController@update')->name('users.update-profile');
+
+    Route::get('/change-password', 'Auth\ChangePasswordController@index')->name('users.change-password');
+
+    Route::post('/change-password', 'Auth\ChangePasswordController@changepassword')->name('users.password-update');
 });
 
 Route::middleware(['auth', 'admin'])->group(function()
