@@ -64,7 +64,7 @@
                       </div>
                   </div>
               <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-                <p class="text-center">No results found for<strong><?php echo e(request()->query('search')); ?></strong></p>
+                <p class="text-center">No results found for <strong> <?php echo e(request()->query('search')); ?></strong></p>
               <?php endif; ?>
               
 
